@@ -23,6 +23,6 @@ block content
       each data in datas
         .cell
           a(href=`/project/${data.id}`)
-            img.thumbnail(src=`/static/img/screen_shots/main/${data.image_urls[0][0]}`, alt='')
+            img.thumbnail.rotateimg(src=`/static/img/screen_shots/main/${data.image_urls[0][0]}`, alt='')
             h5= data.project_name
 

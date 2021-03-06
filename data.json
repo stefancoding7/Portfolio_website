@@ -26,5 +26,42 @@
 
        
 
+    ],
+    "about" : [
+        {
+            "name": "StefanCoding",
+            "person_title": "Full Stack JavaScript Developer",
+            "bio": "This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position.",
+            "skills": [
+                {
+                    "Laravel": 54
+                },
+                {
+                    "Vue.js": 65
+                },
+                {
+                    "HTML": 44
+                },
+                {
+                    "CSS": 25
+                },
+                {
+                    "JavaScript": 49
+                },
+                {
+                    "Git and GitHub": 39
+                },
+                {
+                    "OOP": 78
+                },
+                {
+                    "Express": 39
+                }
+            ]
+                
+                
+            
+
+        }
     ]
 }

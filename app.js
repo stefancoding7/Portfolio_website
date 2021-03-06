@@ -16,7 +16,9 @@ app.get('/', (req, res) => {
   });
 
 app.get('/about', (req, res) => {  
-    res.render('about');
+    const about = data.about[0];
+    //console.dir(about.skills[1])
+    res.render('about', { about: about });
 });
 
 
@@ -28,14 +30,17 @@ app.get('/project/:id', (req, res) => {
       res.render('project', { data: projectData });
      
     } else {
-
-      app.use(error);
-    
+      const err = new Error('Error: 404');
+      err.status = 404;
+      err.message = `Oh No. Sorry but page not found. :-(`; 
+      res.render('error/page-not-found', { err: err });
+      
     }
 
 });
   
-app.use(error);
+app.use(error.notFound);
+app.use(error.globalError);
 
 // Turn on Express server
 app.listen(3000, () => {

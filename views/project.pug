@@ -28,11 +28,11 @@ block content
             li= technologi
 
         //- Add the href values to the links below
-        a.btn-link(href=data.live_link) Live Demo
+        a.btn-link(href=data.live_link, target="_blank") Live Demo
         if data.admin_panel
-          a.btn-link(href=data.admin_panel) Admin Panel
+          a.btn-link(href=data.admin_panel, target="_blank") Admin Panel
         else
-          a.btn-link(href=data.github_link) GitHub Repo
+          a.btn-link(href=data.github_link, target="_blank") GitHub Repo
 
     .project-img-box.box
 
