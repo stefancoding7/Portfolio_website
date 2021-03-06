@@ -1,0 +1,30 @@
+{
+    "projects": [
+
+        {
+            "id": 0,
+            "project_name": "Stefan C Photo",
+            "description": "StefanCphoto is a responsive Personal Portfolio Laravel Script It’s suitable for Resume or Portfolio websites. This Script can be used for personal portfolio, artist portfolio and freelancer portfolio and coder, photographer, agency, company, personal, portfolio, freelancer, artworks, art, artist, web designer, illustrators, designer, developer It’s comfortable with Laptops, tablets, mobiles or any device",
+            "technologies": ["Laravel", "Vue", "Bootstrap"],
+            "live_link": "http://stefancoding.com/products/stefancphoto/",
+            "admin_panel": "http://stefancoding.com/products/stefancphoto/login",
+            "github_link": "",
+            "image_urls": [["stefan_c_photo.jpg"], ["stefan_c_photo_1.jpg", "stefan_c_photo_2.jpg", "stefan_c_photo_3.jpg"]]
+
+        },
+
+        {
+            "id": 1,
+            "project_name": "Pharse Hunter",
+            "description": "This game is a browser-based word guessing game using OOP. The game chooses a random phrase, split the phrase into letters, and put those letters onto the gameboard. Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stefancoding7.github.io/oop_game-v2/",
+            "github_link": "https://github.com/stefancoding7/oop_game-v2",
+            "image_urls": [["phrase_hunter.jpg"], ["phrase_hunter_1.jpg", "phrase_hunter_2.jpg", "phrase_hunter_3.jpg"]]
+
+        }
+
+       
+
+    ]
+}

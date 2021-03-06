@@ -20,9 +20,9 @@ block content
           //- The paths in the link's href and img's src attributes
           //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
           //- The project title for the h5 element's text
-
+      each data in datas
         .cell
-          a(href='#')
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
-            h5 My Site
+          a(href=`/project/${data.id}`)
+            img.thumbnail(src=`/static/img/screen_shots/main/${data.image_urls[0][0]}`, alt='')
+            h5= data.project_name
 
