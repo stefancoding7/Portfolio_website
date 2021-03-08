@@ -1,12 +1,12 @@
 
 .terminal {
-  background-color: black;
+  
   padding-left: 15px;
 }
 
 .Typewriter__wrapper {
   font-family: 'Turret Road', cursive;
-  color: white;
+  color: black;
 }
 
 .Typewriter__wrapper:before {
