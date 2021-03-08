@@ -9,6 +9,10 @@
   color: white;
 }
 
+.Typewriter__wrapper:before {
+  content: '> ';
+}
+
 .Typewriter__cursor {
   color: red;
 }
