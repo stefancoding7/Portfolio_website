@@ -4,7 +4,10 @@ html(lang="en" dir="ltr")
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Portfolio Site
+    meta(name='keywords', content='Stefan Caky full-stack web developer')
+    title Stefan Caky
+    link(rel='icon', href='/static/img/logo.png')
+    link(href='https://fonts.googleapis.com/css2?family=Turret+Road:wght@400;500;700&display=swap', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
     link(rel='stylesheet', href='/static/css/normalize.css')
     link(rel='stylesheet', href='/static/css/styles.css')
@@ -16,26 +19,26 @@ html(lang="en" dir="ltr")
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail(src='/static/img/profile.jpg', alt='')
+          img.thumbnail(src='/static/img/profile.jpg', alt='Stefan Caky')
         .dev-intro-box
 
-          //- Replace with your name
+         
           h5 Stefan Caky
 
-          //- Replace with description of who you are, what you do, and why you are so awesome
+         
           p Full-stack developer
 
-          //- Add path from your '/about' route handler to the href below
+         
           a(href='/about') About &rarr;
           .logo-div
-            img.logo(src='/static/img/logo.png', alt='')
+            img.logo(src='/static/img/logo.png', alt='Stefan Caky')
   
     .wrapper
       .header
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
+         
           span Stefan Caky
     
       block content

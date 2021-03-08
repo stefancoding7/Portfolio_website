@@ -11,11 +11,9 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
 
-        //- Use the info in your data file and the comments below to complete this template
-
-        //- Use interpolation to dynamically add the project title
+       
         h1= data.project_name
-        //- Use interpolation to dynamically add the project description
+        
         p= data.description
         if data.login 
           p= data.login
@@ -26,11 +24,11 @@ block content
         h6 Technologies
         ul
 
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
+         
           each technologi in data.technologies
             li= technologi
 
-        //- Add the href values to the links below
+        
         a.btn-link(href=data.live_link, target="_blank") Live Demo
         if data.admin_panel
           a.btn-link(href=data.admin_panel, target="_blank") Admin Panel
@@ -39,7 +37,7 @@ block content
 
     .project-img-box.box
 
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
+      
       each photo in data.image_urls[1]
         img.project-img(src=`/static/img/screen_shots/landscape/${photo}`, alt='')
       

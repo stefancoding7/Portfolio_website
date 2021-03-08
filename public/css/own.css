@@ -5,11 +5,11 @@
 }
 
 .Typewriter__wrapper {
+  font-family: 'Turret Road', cursive;
   color: white;
 }
 
 .Typewriter__cursor {
-  content: " - Remember this";
   color: red;
 }
 

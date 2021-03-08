@@ -3,11 +3,7 @@ extends layout.pug
 block error
 
   article.portfolio-intro.error
-
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
     h1= err.status
-
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
     p= err.message
     br
     a(href='/') Return to home page

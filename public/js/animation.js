@@ -33,7 +33,7 @@ function progressBar() {
                 skills[i].style.background = `linear-gradient(90deg, #000000 ${value}%, #FFFF ${value}%)`;
             }
             
-        }, random(35));
+        }, random(40));
     }
     
     
@@ -63,7 +63,7 @@ function terminalEffect() {
 }
 
 
-shadowLate(random(15000));
+shadowLate(random(10000));
 
 if(skills) {
     progressBar();
