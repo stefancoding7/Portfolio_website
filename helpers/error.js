@@ -1,5 +1,5 @@
 
-
+// error handler 404 than render not found page
 const notFound = (req, res, next) => {
   const err = new Error('Error: 404');
   err.status = 404;
@@ -9,8 +9,9 @@ const notFound = (req, res, next) => {
   
 };
 
+
+//error handler  500 for global errors
 const globalError = (err, req, res, next) => {
- 
 
   if(!err.status === 404) {
     err.status = 500;
@@ -22,12 +23,5 @@ const globalError = (err, req, res, next) => {
   
 }
 
-// const internalServerError = ((err, req, res, next) => {
-//     res.status(err.status || 500);
-//     res.render('error', {
-//       message: err.message,
-//       error: {}
-//     });
-//   });
 
 module.exports = { notFound, globalError};

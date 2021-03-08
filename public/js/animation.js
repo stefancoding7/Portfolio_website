@@ -1,5 +1,7 @@
 const profilePic = document.querySelector('.thumbnail-box > img');
 const skills = document.querySelectorAll('.skills');
+const terminal = document.querySelector('.terminal')
+
 //console.log(skills.getAttribute('data-skills'));
 
 // get radnom number
@@ -17,7 +19,7 @@ function shadowLate(time) {
 
 
 
-
+// progress bar for about page
 function progressBar() {
     for(let i = 0; skills.length > i; i++){
         let maxValue = skills[i].getAttribute('data-skills');
@@ -31,12 +33,43 @@ function progressBar() {
                 skills[i].style.background = `linear-gradient(90deg, #000000 ${value}%, #FFFF ${value}%)`;
             }
             
-        }, random(2));
+        }, random(35));
     }
     
     
 }
 
 
+function terminalEffect() {
+    let typewriter = new Typewriter(terminal, {
+        loop: true
+    });
+    
+    typewriter.typeString('EXPRESS')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('LARAVEL')
+        .pauseFor(2500)
+        .deleteChars(7)
+        .typeString('VUE.JS')
+        .pauseFor(2000)
+        .deleteChars(7)
+        .typeString('NODE.JS')
+        .pauseFor(2500)
+        .deleteChars(7)
+        .typeString('REACT')
+        .pauseFor(2400)
+        .start();
+}
+
+
 shadowLate(random(15000));
-progressBar();
+
+if(skills) {
+    progressBar();
+}
+
+
+if(terminal) {
+    terminalEffect();
+}

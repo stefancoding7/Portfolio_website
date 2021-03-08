@@ -11,6 +11,7 @@ html(lang="en" dir="ltr")
     link(rel='stylesheet', href='/static/css/own.css')
 
   body
+  
     #my-info.sidebar
       .sidebar-info-box
         br
@@ -26,7 +27,9 @@ html(lang="en" dir="ltr")
 
           //- Add path from your '/about' route handler to the href below
           a(href='/about') About &rarr;
-
+          .logo-div
+            img.logo(src='/static/img/logo.png', alt='')
+  
     .wrapper
       .header
         .header-info-box
@@ -34,9 +37,9 @@ html(lang="en" dir="ltr")
 
           //- Replace with your name — this is for the mobile layout
           span Stefan Caky
-
+    
       block content
   
-  
+  script(src='https://unpkg.com/typewriter-effect@latest/dist/core.js')
   script(src='/static/js/script.js')
   script(src='/static/js/animation.js') 

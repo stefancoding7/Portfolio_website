@@ -27,6 +27,8 @@ body {
   transition: all 0.4s ease-out;
 }
 
+
+
 article {
   background: #fefefe;
 }
@@ -147,7 +149,7 @@ nav a span {
   padding: 20px;
   background: #000;
   -webkit-box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61); 
-box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
+  box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
 }
 
 .sidebar-info-box {
@@ -164,6 +166,11 @@ box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
   -webkit-box-shadow: 6px 7px 0px -3px #ffffff; 
   box-shadow: 6px 7px 0px -3px #ffffff;
   transition: all 0.5s ease-in-out;
+}
+
+.sidebar .thumbnail-error {
+  width: 100%;
+  max-width: 250px;
 }
 
 .dev-intro-box {
@@ -270,13 +277,22 @@ box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
 .cell img {
   width: 100%;
   min-width: 100px;
-  -webkit-box-shadow: 6px 7px 0px -3px #000000; 
-  box-shadow: 6px 7px 0px -3px #000000;
+  -moz-transform:none;
+  -webkit-transform:none;
+  -o-transform:none;
+  -ms-transform:none;
+  transform:none;
+ 
   
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .cell img:hover {
+  -moz-transform: translate(-5px, 0px);
+  -webkit-transform: translate(-5px, 0px);
+  -o-transform: translate(-5px, 0px);
+  -ms-transform: translate(-5px, 0px);
+  transform: translate(-5px, 0px);
   -webkit-box-shadow: 11px 12px 0px -3px #000000; 
   box-shadow: 11px 12px 0px -3px #000000;
 }
@@ -335,14 +351,27 @@ box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
 }
 
 /*
-  error mobile
+  error mobile and side bar
 */
 @media only screen and (max-width: 600px) {
   .error-mobile-img {
     display: block;
     width: 100%;
   }
+
+  .sidebar {
+    -webkit-box-shadow: 5px 0px 0px -5px rgba(0,0,0,0.47); 
+    box-shadow: 5px 0px 0px -5px rgba(0,0,0,0.47);
+  }
 }
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    -webkit-box-shadow: 5px 0px 0px -5px rgba(0,0,0,0.47); 
+    box-shadow: 5px 0px 0px -5px rgba(0,0,0,0.47);
+  }
+}
+
 
 /* 
   Tablet layout styles 
@@ -383,6 +412,8 @@ box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
   }
 
   
+
+  
 }
 
 
@@ -406,6 +437,6 @@ box-shadow: 14px 3px 0px -5px rgba(255,75,0,0.61);
   .inner-wrapper {
     max-width: 1200px;
   }
-
+  
   
 }

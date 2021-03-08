@@ -1,16 +1,23 @@
-.rotateimg {
-    -webkit-transform:rotate(1.5deg);
-    -moz-transform: rotate(1.5deg);
-    -ms-transform: rotate(1.5deg);
-    -o-transform: rotate(1.5deg);
-    transform: rotate(1.5deg);
-    transition: 0.1;
-  }
 
-  .rotateimg:hover {
-    -webkit-transform:rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
+.terminal {
+  background-color: black;
+  padding-left: 15px;
+}
+
+.Typewriter__wrapper {
+  color: white;
+}
+
+.Typewriter__cursor {
+  content: " - Remember this";
+  color: red;
+}
+
+.coding-img {
+  width: 100%;
+}
+
+.logo-div {
+  margin-top: 30px;
+  text-align: center;
+}
