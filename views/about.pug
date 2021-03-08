@@ -22,8 +22,12 @@ block content
 
           //- Replace the boilerplate below with your best elevator pitch
           p= about.bio
+          
+          p= about.bio_2
 
+          img(src=`static/img/${about.header_img}`, alt='')
 
+          p= about.context
       .skills-contact-box.box
         h6 Skills
 
@@ -31,15 +35,14 @@ block content
         ul
         
           each skill in about.skills 
-            li(style=`background: linear-gradient(90deg, #000000 ${Object.values(skill)}%, #FFFF ${Object.values(skill)}%)`)= Object.keys(skill)
+            li.skills(style=`background: linear-gradient(90deg, #000000 0%, #FFFF 0%)`, data-skills= `${Object.values(skill)}`)= Object.keys(skill)
             
 
         h6 Contact Info
 
         //- Replace with your own contact info - feel free to use fake information if you prefer
         ul
-          li 555-555-1234
-          li stefancoding7@gmail.com
+          li(style="color: black;") stefancoding7@gmail.com
 
         //- Add URLs to the hrefs below to link to your social media accounts - feel free to use non-personal links to social media home pages if you prefer
         a.btn-link(href='https://www.linkedin.com/in/stefan-caky-89957113a/', target="_blank") LinkedIn

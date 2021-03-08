@@ -1,7 +1,16 @@
 .rotateimg {
-    -webkit-transform:rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    transform: rotate(3deg);
+    -webkit-transform:rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -ms-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg);
+    transition: 0.1;
+  }
+
+  .rotateimg:hover {
+    -webkit-transform:rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
   }

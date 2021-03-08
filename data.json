@@ -3,8 +3,10 @@
 
         {
             "id": 0,
+            "url": "stefan-c-photo",
             "project_name": "Stefan C Photo",
-            "description": "StefanCphoto is a responsive Personal Portfolio Laravel Script It’s suitable for Resume or Portfolio websites. This Script can be used for personal portfolio, artist portfolio and freelancer portfolio and coder, photographer, agency, company, personal, portfolio, freelancer, artworks, art, artist, web designer, illustrators, designer, developer It’s comfortable with Laptops, tablets, mobiles or any device",
+            "description": "StefanCphoto is a responsive Personal Portfolio Laravel Script It’s suitable for Resume or Portfolio websites. This Script can be used for personal portfolio, artist portfolio and freelancer portfolio and coder, photographer, agency, company, personal, portfolio, freelancer, artworks, art, artist, web designer, illustrators, designer, developer It’s comfortable with Laptops, tablets, mobiles or any device.",
+            "login": "If you would like to try how admin panel works just log in with following details",
             "technologies": ["Laravel", "Vue", "Bootstrap"],
             "live_link": "http://stefancoding.com/products/stefancphoto/",
             "admin_panel": "http://stefancoding.com/products/stefancphoto/login",
@@ -15,12 +17,61 @@
 
         {
             "id": 1,
+            "url": "phrase-hunter",
             "project_name": "Pharse Hunter",
             "description": "This game is a browser-based word guessing game using OOP. The game chooses a random phrase, split the phrase into letters, and put those letters onto the gameboard. Each time the player guesses a letter, the program compares the letter the player has chosen with the random phrase",
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link": "https://stefancoding7.github.io/oop_game-v2/",
             "github_link": "https://github.com/stefancoding7/oop_game-v2",
             "image_urls": [["phrase_hunter.jpg"], ["phrase_hunter_1.jpg", "phrase_hunter_2.jpg", "phrase_hunter_3.jpg"]]
+
+        },
+
+        {
+            "id": 2,
+            "url": "dice-game",
+            "project_name": "Dice game",
+            "description": "Dicing game (what is farting game :D) play with funny effects. Play with your friends or with computer.Wrote in HTML, CSS and JAVASCRIPT. You could download and put in your website is mobile friendly.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "http://stefancoding.com/farting/",
+            "github_link": "https://github.com/stefancoding7/dicegame",
+            "image_urls": [["farting_game.jpg"], ["farting_game_1.jpg", "farting_game_2.jpg", "farting_game_3.jpg"]]
+
+        },
+
+        {
+            "id": 3,
+            "url": "public-api-request",
+            "project_name": "Public API request",
+            "description": "Show random employees listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name will open a modal window with more detailed information, such as the employee’s birthday and address.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stefancoding7.github.io/Public_API_Request_Project/",
+            "github_link": "https://github.com/stefancoding7/Public_API_Request_Project",
+            "image_urls": [["public_api.jpg"], ["public_api_1.jpg", "public_api_2.jpg"]]
+
+        },
+
+        {
+            "id": 4,
+            "url": "interactive-form",
+            "project_name": "Interactive Form",
+            "description": "This project is an interactive registration form using real-time error messages for a fictional Full Stack conference.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stefancoding7.github.io/interactive-form-v3/",
+            "github_link": "https://github.com/stefancoding7/interactive-form-v3/",
+            "image_urls": [["interactive_form.jpg"], ["interactive_form_1.jpg", "interactive_form_2.jpg"]]
+
+        }, 
+
+        {
+            "id": 5,
+            "url": "data-pagination-and-filtering",
+            "project_name": "Data Pagination and Filtering",
+            "description": "This project is a common web development technique known as “pagination” to enhance the usability of a web page.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://stefancoding7.github.io/data-pagination-and-filtering-v1/",
+            "github_link": "https://github.com/stefancoding7/interactive-form-v3/",
+            "image_urls": [["data_pagination.jpg"], ["data_pagination_1.jpg", "data_pagination_2.jpg", "data_pagination_3.jpg"]]
 
         }
 
@@ -31,7 +82,10 @@
         {
             "name": "StefanCoding",
             "person_title": "Full Stack JavaScript Developer",
-            "bio": "This is my elevator pitch. It is the elevator pitch to end all elevator pitches. Your mind is blown. Your mortal brain can scarcely process how well my prior experience maps to your open dev position.",
+            "bio": "I'm Stefan, and I am a short-time JavaScript full-stack developer. I work with PHP applications thru Laravel and Vue.js. Right now I learning JavaScript deeper and get more experience with CSS. You could find nearly all of my projects on GitHub and if I finish some, I  will upload soon as possible.",
+            "bio_2": "StefanCphoto is a responsive Personal Portfolio Laravel Script It’s suitable for Resume or Portfolio websites. This Script can be used for personal portfolio, artist portfolio and freelancer portfolio and coder, photographer, agency, company, personal, portfolio, freelancer, artworks, art, artist, web designer, illustrators, designer, developer It’s comfortable with Laptops, tablets, mobiles or any device. Admin panel is fully responsive when you would like to upload quickly photos from your phone.",
+            "header_img": "header-img.jpg",
+            "context": "I enjoy being all challenge with projects, outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of the organization.",
             "skills": [
                 {
                     "Laravel": 54

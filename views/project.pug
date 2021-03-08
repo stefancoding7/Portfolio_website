@@ -1,12 +1,12 @@
 extends layout.pug
 
 block content
-
+  
   nav.nav
     a(href='/')
       span &larr;
       |  Back
-
+  
   article.portfolio-projects
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
@@ -17,7 +17,10 @@ block content
         h1= data.project_name
         //- Use interpolation to dynamically add the project description
         p= data.description
-
+        if data.login 
+          p= data.login
+          p Username: superadministrator@app.com
+          p Password: password
       .project-tech-links-box.box
 
         h6 Technologies

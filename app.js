@@ -22,12 +22,26 @@ app.get('/about', (req, res) => {
 });
 
 
-app.get('/project/:id', (req, res) => {  
-    const projectId = req.params.id;
-    const projectData = data.projects[projectId];
+app.get('/project/:url', (req, res) => {  
+  
+    const projectUrl = req.params.url;
+    const namedUrl = [];
+
     
-    if(projectData) {
+    data.projects.map(data => {
+      if(data.url === projectUrl) {
+        namedUrl.push(data);
+      }
+    });
+
+    
+    const projectData = data.projects[projectUrl];
+
+    if(projectData){
       res.render('project', { data: projectData });
+    }
+    else if(namedUrl[0]) {
+      res.render('project', { data: namedUrl[0] });
      
     } else {
       const err = new Error('Error: 404');
@@ -46,3 +60,7 @@ app.use(error.globalError);
 app.listen(3000, () => {
     console.log('Server listening on port 3000');
   }) 
+
+  
+
+  

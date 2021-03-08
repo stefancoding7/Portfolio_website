@@ -5,10 +5,10 @@ block content
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 Heading
+    h1 Projects
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    p This is my last projects
 
 
   article.portfolio-project-thumbs
@@ -22,7 +22,7 @@ block content
           //- The project title for the h5 element's text
       each data in datas
         .cell
-          a(href=`/project/${data.id}`)
+          a(href=`/project/${data.url}`)
             img.thumbnail.rotateimg(src=`/static/img/screen_shots/main/${data.image_urls[0][0]}`, alt='')
             h5= data.project_name
 
