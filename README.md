@@ -9,3 +9,4 @@ Portfolio site
 6. After random time animation in profile picture
 7. Favicon logo
 8. Working with "npm start" and "nodemon"
+9. URL working with <b>Named Rout</b> and <b>ID rout also</b> for example project/my-project or project/1
