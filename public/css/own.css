@@ -7,6 +7,7 @@
 .Typewriter__wrapper {
   font-family: 'Turret Road', cursive;
   color: black;
+  font-size: 40px;
 }
 
 .Typewriter__wrapper:before {
@@ -15,6 +16,7 @@
 
 .Typewriter__cursor {
   color: red;
+  font-size: 40px;
 }
 
 .coding-img {

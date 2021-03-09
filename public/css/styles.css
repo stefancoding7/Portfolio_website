@@ -163,8 +163,7 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  -webkit-box-shadow: 6px 7px 0px -3px #ffffff; 
-  box-shadow: 6px 7px 0px -3px #ffffff;
+  border-radius: 20px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -277,14 +276,15 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
+  
   -moz-transform:none;
   -webkit-transform:none;
   -o-transform:none;
   -ms-transform:none;
   transform:none;
- 
+  border-radius: 20px;
   
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .cell img:hover {
@@ -321,19 +321,29 @@ nav a span {
   color: white;
   list-style-type: none;
   border-bottom: 1px solid white;
+  border-top-right-radius: 2px 2px;
 }
 
 .project-img {
   width: 100%;
   max-width: 1065px;
   margin-bottom: 15px;
-  -webkit-box-shadow: 6px 7px 0px -3px #000000; 
-  box-shadow: 6px 7px 0px -3px #000000;
+  -moz-transform:none;
+  -webkit-transform:none;
+  -o-transform:none;
+  -ms-transform:none;
+  transform:none;
+  border-radius: 20px;
   
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-img:hover {
+  -moz-transform: translate(-5px, 0px);
+  -webkit-transform: translate(-5px, 0px);
+  -o-transform: translate(-5px, 0px);
+  -ms-transform: translate(-5px, 0px);
+  transform: translate(-5px, 0px);
   -webkit-box-shadow: 11px 12px 0px -3px #000000; 
   box-shadow: 11px 12px 0px -3px #000000;
 }
@@ -348,6 +358,7 @@ nav a span {
   padding: 0.85em 1em;
   background-color: #333;
   border: 1px solid transparent;
+  border-radius: 30px;
 }
 
 /*

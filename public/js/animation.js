@@ -31,6 +31,7 @@ function progressBar() {
                 clearInterval(interval);
             } else {
                 skills[i].style.background = `linear-gradient(90deg, #000000 ${value}%, #FFFF ${value}%)`;
+                
             }
             
         }, random(40));
