@@ -8,3 +8,4 @@ Portfolio site
 5. Custom logo
 6. After random time animation in profile picture
 7. Favicon logo
+8. Working with "npm start" and "nodemon"
