@@ -66,7 +66,11 @@ app.get('/project/:url', (req, res) => {
       // render page-not-found if url not found
       const err = new Error('Error: 404');
       err.status = 404;
-      err.message = `Oh No. Sorry but page not found. :-(`; 
+      err.message = `Oh No. Sorry but page not found.`; 
+      
+       // log error to the console
+      console.log(`${err.message} | Error status: ${err.status}`);
+
       res.render('error/page-not-found', { err: err });
       
     }

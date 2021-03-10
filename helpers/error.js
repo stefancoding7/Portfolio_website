@@ -4,6 +4,9 @@ const notFound = (req, res, next) => {
   const err = new Error('Error: 404');
   err.status = 404;
   err.message = `Oh No. Sorry but page not found.`; 
+
+  // log error to the console
+  console.log(`${err.message} | Error status: ${err.status}`);
   next(err);
   res.render('error/page-not-found', { err: err });
   
@@ -16,6 +19,9 @@ const globalError = (err, req, res, next) => {
   if(!err.status === 404) {
     err.status = 500;
     err.message = `Looks like something went wrong`; 
+    
+     // log error to the console
+    console.log(`${err.message} | Error status: ${err.status}`);
     next(err);
     res.render('error/error', { err: err });
   }
